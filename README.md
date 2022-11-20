@@ -30,5 +30,8 @@ If you have changed other files in the `config` directory (such as `config/west.
 ### Flash firmware
 
 Resources can be found on Kinesis.com
-https://kinesis-ergo.com/support/kb360pro/#firmware-updates
-https://kinesis-ergo.com/support/kb360pro/#manuals
+* https://kinesis-ergo.com/support/kb360pro/#firmware-updates
+* https://kinesis-ergo.com/support/kb360pro/#manuals
+
+### Need a GUI
+* https://github.com/nickcoutsos/keymap-editor
