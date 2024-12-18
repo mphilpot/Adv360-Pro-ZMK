@@ -49,11 +49,11 @@
     };
     mac {
       bindings = <
-        &trans &trans &trans &trans &trans &trans &trans                                                              &trans &trans &trans &trans &trans &trans &trans
-        &trans &trans &trans &trans &trans &trans &trans                                                              &trans &trans &trans &trans &trans &trans &trans
-        &trans &trans &trans &trans &trans &trans &trans     &kp LCTRL &kp LALT &kp LEFT_CONTROL  &kp RCTRL           &trans &trans &trans &trans &trans &trans &trans
-        &trans &trans &trans &trans &trans &trans                           &kp HOME &kp PG_UP                               &trans &trans &trans &trans &trans &trans
-        &trans &trans &trans &trans &trans               &kp BSPC &kp SPACE &kp END  &kp PG_DN &kp ENTER &kp SPACE                  &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans &trans &trans                                                                        &trans &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans &trans &trans                                                                        &trans &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans &trans &trans               &kp LCMD  &kp LALT &kp LCTRL &kp RCTRL                   &trans &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans &trans                                &kp HOME &kp PG_UP                                    &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans                    &kp BSPC &kp SPACE &kp END  &kp PG_DN &kp ENTER &kp SPACE                       &trans &trans &trans &trans &trans
       >;
     };
     gaming {
