@@ -11,6 +11,7 @@
 #define KEYPAD 4
 #define FN 5
 #define MOD 6
+#define STD 7
 
 / {
     behaviors {
@@ -41,11 +42,11 @@
 
     default_layer {
       bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog KEYPAD                                                                     &mo MOD  &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
-        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &tog GAMING                                                                     &tog MAC &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
-        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &tog ASHERONS           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL                  &none    &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
-        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                                    &kp HOME &kp PG_UP                                     &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-        &mo FN    &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                        &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp SPACE                        &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo FN
+        &kp EQUAL &kp N1    &kp N2     &kp N3   &kp N4     &kp N5 &tog KEYPAD                                                                     &mo MOD  &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
+        &kp TAB   &kp Q     &kp W      &kp E    &kp R      &kp T  &tog GAMING                                                                     &tog MAC &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
+        &kp ESC   &kp A     &kp S      &kp D    &kp F      &kp G  &tog ASHERONS           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL                  &none    &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
+        &kp LSHFT &kp Z     &kp X      &kp C    &kp V      &kp B                                    &kp HOME &kp PG_UP                                     &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+        &mo FN    &kp GRAVE &caps_word &kp LEFT &kp RIGHT                        &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp SPACE                        &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo FN
       >;
     };
     mac {
@@ -59,20 +60,20 @@
     };
     gaming {
       bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                                      &trans &trans &trans &trans &trans &trans &trans
-        &kp TAB   &kp T     &kp Q    &kp W    &kp E      &kp R  &trans                                                                      &trans &trans &trans &trans &trans &trans &trans
-        &kp ESC   &kp G     &kp A    &kp S    &kp D      &kp F  &trans               &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL                 &trans &trans &trans &trans &trans &trans &trans
-        &kp LSHFT &kp B     &kp Z    &kp X    &kp C      &kp V                                 &kp HOME &kp PG_UP                                  &trans &trans &trans &trans &trans &trans
-        &trans    &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                     &kp BSPC &kp SPACE &kp END  &kp PG_DN &kp ENTER &kp DEL                       &trans &trans &trans &trans &trans
+        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                                          &trans &trans &trans &trans &trans &trans &trans
+        &kp TAB   &kp T     &kp Q    &kp W    &kp E      &kp R  &trans                                                                          &trans &trans &trans &trans &trans &trans &trans
+        &kp ESC   &kp G     &kp A    &kp S    &kp D      &kp F  &trans               &kp LCTRL &kp LALT &lt STD LGUI  &kp RCTRL                 &trans &trans &trans &trans &trans &trans &trans
+        &kp LSHFT &kp B     &kp Z    &kp X    &kp C      &kp V                                 &kp HOME &kp PG_UP                                      &trans &trans &trans &trans &trans &trans
+        &trans    &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                     &kp BSPC &kp SPACE &kp END  &kp PG_DN &kp ENTER &kp DEL                           &trans &trans &trans &trans &trans
       >;
     };
     asherons {
       bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                                      &trans &trans &trans  &trans   &trans    &trans &trans
-        &kp TAB   &kp T     &kp Q    &kp W    &kp E      &kp R  &trans                                                                      &kp I  &trans &kp INS &kp HOME &kp PG_UP &trans &trans
-        &kp ESC   &kp G     &kp A    &kp S    &kp D      &kp F  &trans               &kp LCTRL &kp LALT &kp GRAVE  &kp RCTRL                &kp K  &trans &kp DEL &kp END  &kp PG_DN &trans &trans
-        &kp LSHFT &kp B     &kp Z    &kp X    &kp C      &kp V                                 &kp HOME &kp PG_UP                                  &trans &trans  &trans   &trans    &trans &trans
-        &trans    &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                     &kp BSPC &kp SPACE &kp END  &kp PG_DN &kp ENTER &kp DEL                       &trans  &trans   &trans    &trans &trans
+        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                                          &trans &trans &trans  &trans   &trans    &trans &trans
+        &kp TAB   &kp T     &kp Q    &kp W    &kp E      &kp R  &trans                                                                          &kp I  &trans &kp INS &kp HOME &kp PG_UP &trans &trans
+        &kp ESC   &kp G     &kp A    &kp S    &kp D      &kp F  &trans               &kp LCTRL &kp LALT &lt STD GRAVE  &kp RCTRL                &kp K  &trans &kp DEL &kp END  &kp PG_DN &trans &trans
+        &kp LSHFT &kp B     &kp Z    &kp X    &kp C      &kp V                                 &kp HOME &kp PG_UP                                      &trans &trans  &trans   &trans    &trans &trans
+        &trans    &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                     &kp BSPC &kp SPACE &kp END  &kp PG_DN      &kp ENTER &kp DEL                      &trans  &trans   &trans    &trans &trans
       >;
     };
     keypad {
@@ -93,7 +94,6 @@
         &trans &trans &trans &trans &trans                         &trans &kp C_PP &kp C_VOL_DN &kp C_PREV &kp C_PP &trans                    &trans &trans &trans  &trans  &trans
       >;
     };
-
     mod {
       bindings = <
         &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                                                        &trans                 &none        &none        &none        &none &none &none
@@ -101,6 +101,17 @@
         &none &none        &none        &none        &none        &none        &bt BT_CLR               &none &none &none &none                             &rgb_ug RGB_MEFS_CMD 5 &none        &none        &none        &none &none &none
         &none &none        &none        &none        &macro_ver   &none                                       &none &none                                                          &none        &none        &none        &none &none &none
         &none &none        &none        &none        &none                                        &none &none &none &none &bl BL_TOG &rgb_ug RGB_TOG                                            &bl BL_INC   &bl BL_DEC   &none &none &none
+      >;
+    };
+
+    // REDEFINING STANDARD KEYBOARD LAYOUT
+    standard_keyboard {
+      bindings = <
+        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog KEYPAD                                                                     &mo MOD  &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
+        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &tog GAMING                                                                     &tog MAC &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
+        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &tog ASHERONS           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL                  &none    &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
+        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                                    &kp HOME &kp PG_UP                                     &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+        &mo FN    &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                        &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp SPACE                        &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo FN
       >;
     };
   };
