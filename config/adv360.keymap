@@ -60,20 +60,20 @@
     };
     gaming {
       bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                                          &trans &trans &trans &trans &trans &trans &trans
-        &kp TAB   &kp T     &kp Q    &kp W    &kp E      &kp R  &trans                                                                          &trans &trans &trans &trans &trans &trans &trans
-        &kp ESC   &kp G     &kp A    &kp S    &kp D      &kp F  &trans               &kp LCTRL &kp LALT &lt STD LGUI  &kp RCTRL                 &trans &trans &trans &trans &trans &trans &trans
-        &kp LSHFT &kp B     &kp Z    &kp X    &kp C      &kp V                                 &kp HOME &kp PG_UP                                      &trans &trans &trans &trans &trans &mo STD
-        &trans    &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                     &kp BSPC &kp SPACE &kp END  &kp PG_DN &kp ENTER &kp DEL                           &trans &trans &trans &trans &trans
+        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                                              &trans &trans &trans &trans &trans &trans &trans
+        &kp TAB   &kp T     &kp Q    &kp W    &kp E      &kp R  &trans                                                                              &trans &trans &trans &trans &trans &trans &trans
+        &kp ESC   &kp G     &kp A    &kp S    &kp D      &kp F  &trans               &kp LCTRL &kp LALT     &kp LGUI  &kp RCTRL                     &trans &trans &trans &trans &trans &trans &trans
+        &kp LSHFT &kp B     &kp Z    &kp X    &kp C      &kp V                                 &kp HOME     &kp PG_UP                                      &trans &trans &trans &trans &trans &trans
+        &trans    &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                     &kp BSPC &kp SPACE &lt STD END  &lt STD PG_DN &kp ENTER &kp DEL                       &trans &trans &trans &trans &trans
       >;
     };
     asherons {
       bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                                          &trans &trans &trans  &trans   &trans    &trans &trans
-        &kp TAB   &kp T     &kp Q    &kp W    &kp E      &kp R  &trans                                                                          &kp I  &trans &kp INS &kp HOME &kp PG_UP &trans &trans
-        &kp ESC   &kp G     &kp A    &kp S    &kp D      &kp F  &trans               &kp LCTRL &kp LALT &lt STD GRAVE  &kp RCTRL                &kp K  &trans &kp DEL &kp END  &kp PG_DN &trans &trans
-        &kp LSHFT &kp B     &kp Z    &kp X    &kp C      &kp V                                 &kp HOME &kp PG_UP                                      &trans &trans  &trans   &trans    &trans &mo STD
-        &trans    &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                     &kp BSPC &kp SPACE &kp END  &kp PG_DN      &kp ENTER &kp DEL                      &trans  &trans   &trans    &trans &trans
+        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                                              &trans &trans &trans  &trans   &trans    &trans &trans
+        &kp TAB   &kp T     &kp Q    &kp W    &kp E      &kp R  &trans                                                                              &kp I  &trans &kp INS &kp HOME &kp PG_UP &trans &trans
+        &kp ESC   &kp G     &kp A    &kp S    &kp D      &kp F  &trans               &kp LCTRL &kp LALT     &kp GRAVE      &kp RCTRL                &kp K  &trans &kp DEL &kp END  &kp PG_DN &trans &trans
+        &kp LSHFT &kp B     &kp Z    &kp X    &kp C      &kp V                                 &kp HOME     &kp PG_UP                                      &trans &trans  &trans   &trans    &trans &trans
+        &trans    &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                     &kp BSPC &kp SPACE &lt STD END  &lt STD PG_DN  &kp ENTER &kp DEL                      &trans  &trans   &trans    &trans &trans
       >;
     };
     keypad {
